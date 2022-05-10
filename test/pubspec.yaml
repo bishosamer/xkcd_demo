@@ -1,4 +1,4 @@
-name: xkcd_demo
+name: test
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -29,16 +29,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  xkcd_demo:
+    path: ../
+
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  flutter_bloc: ^8.0.1
-  http: ^0.13.4
-  equatable: ^2.0.3
-  optimized_cached_image: ^3.0.0
-  shared_preferences: ^2.0.13
 
 dev_dependencies:
   flutter_test:

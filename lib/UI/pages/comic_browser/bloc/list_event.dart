@@ -9,8 +9,8 @@ abstract class ListEvent extends Equatable {
 }
 
 class AddToList extends ListEvent {
-  final Comic comic;
-  const AddToList(this.comic);
+  final int numberToLoad;
+  const AddToList(this.numberToLoad);
   @override
-  List<Object> get props => [comic];
+  List<Object> get props => [numberToLoad];
 }

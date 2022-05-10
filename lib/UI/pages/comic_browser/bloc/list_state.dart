@@ -13,4 +13,8 @@ class LoadedState extends ListState {
   LoadedState(this.comics);
 }
 
-class LoadingState extends ListState {}
+class LoadingState extends ListState {
+  final List<Comic> comics;
+
+  LoadingState(this.comics);
+}
