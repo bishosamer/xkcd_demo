@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:optimized_cached_image/optimized_cached_image.dart';
 import 'package:xkcd_demo/UI/widgets/favourite_button.dart';
 import 'package:xkcd_demo/models/comic.dart';
+import 'package:share_plus/share_plus.dart';
 
 class ComicViewer extends StatelessWidget {
   const ComicViewer({Key? key, required this.comic}) : super(key: key);
@@ -14,6 +15,11 @@ class ComicViewer extends StatelessWidget {
         title: Text(comic.title),
         actions: [
           FavouriteButton(comic: comic),
+          IconButton(
+              onPressed: () {
+                Share.share('check out this xkcd ${comic.imageUrl}');
+              },
+              icon: const Icon(Icons.share))
         ],
       ),
       body: SingleChildScrollView(

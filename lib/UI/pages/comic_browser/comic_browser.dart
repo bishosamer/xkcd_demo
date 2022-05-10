@@ -31,7 +31,9 @@ class ComicBrowser extends StatelessWidget {
           });
           if (state is ListInitialState) {
             SharedPrefs.init();
-            context.read<ListBloc>().add(const AddToList(10));
+
+            context.read<ListBloc>().add(const AddToList(2));
+
             return const Center(
               child: CircularProgressIndicator(),
             );
@@ -65,6 +67,9 @@ class ComicBrowser extends StatelessWidget {
                     },
                   );
           } else if (state is LoadedState) {
+            if (state.comics.length < 10) {
+              context.read<ListBloc>().add(const AddToList(2));
+            }
             return ListView.builder(
               controller: controller,
               itemCount: state.comics.length,

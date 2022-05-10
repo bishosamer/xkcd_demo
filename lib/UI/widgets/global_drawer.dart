@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:xkcd_demo/UI/pages/comic_browser/comic_browser.dart';
-import 'package:xkcd_demo/UI/pages/favourite_comic_browser.dart';
 
 class GlobalDrawer extends StatelessWidget {
   const GlobalDrawer({

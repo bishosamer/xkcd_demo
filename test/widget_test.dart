@@ -7,8 +7,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:xkcd_demo/UI/pages/comic_browser.dart';
-import 'package:xkcd_demo/bloc/list_bloc.dart';
+import 'package:xkcd_demo/UI/pages/comic_browser/comic_browser.dart';
+import 'package:xkcd_demo/UI/pages/comic_browser/bloc/list_bloc.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
