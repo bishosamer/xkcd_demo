@@ -1,16 +1,16 @@
 # xkcd_demo
 
-A new Flutter project.
+-Paginated listview to browse through comics using bloc for state management 
 
-## Getting Started
+-xkcd search couldn't be implemented the server seems to be down (always returning 500)
 
-This project is a starting point for a Flutter application.
+-notifications could be implemented in 2 main ways I can think of:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+       1: have the app be always running in the background polling the rss server (not recommended)
+   
+       2: have a firebase function poll the rss server and send the notifications through firebase messaging (or using a similar service from aws)
+ -share functionality done using share_plus package
+ 
+ -favourites are saved using shared_preferences package for the comic data and optimized_cached_image package for all image data
+ 
+ 
